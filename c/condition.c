@@ -1,4 +1,4 @@
-// ¼ýÀÚ ¸ÂÃß±â(Up&Down)
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß±ï¿½(Up&Down)
 
 #include<stdio.h>
 #include<time.h>
@@ -7,36 +7,36 @@ int main(void)
 {
     srand(time(NULL));
     int num = rand() % 100 + 1; // 1 ~ 100
-    int answer = 0; // Á¤´ä
-    int chance = 5; // ±âÈ¸
+    int answer = 0; // ï¿½ï¿½ï¿½ï¿½
+    int chance = 5; // ï¿½ï¿½È¸
     
     while(1)
     {
-        printf("³²Àº ±âÈ¸ %d ¹ø\n", chance--);
-        printf("¼ýÀÚ¸¦ ¸ÂÇôº¸¼¼¿ä (1~100) : ");
+        printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ %d ï¿½ï¿½\n", chance--);
+        printf("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (1~100) : ");
         scanf_s("%d", &answer);
 
         if (answer > num)
         {
-            printf("DOWN ¡é \n\n");
+            printf("DOWN ï¿½ï¿½ \n\n");
         } 
         else if (answer < num)
         {
-            printf("UP ¡è \n\n");
+            printf("UP ï¿½ï¿½ \n\n");
         }
         else if (answer == num)
         {
-            printf("Á¤´äÀÔ´Ï´Ù ! \n\n");
+            printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½ ! \n\n");
             break;
         }
         else
         {
-            printf("¾Ë ¼ö ¾ø´Â ¿À·ù°¡ ¹ß»ýÇÏ¿´½À´Ï´Ù. \n\n");
+            printf("ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. \n\n");
         }
 
         if (chance == 0) 
         {
-            printf("±âÈ¸¸¦ ¸ðµÎ »ç¿ëÇÏ¿´½À´Ï´Ù. \n\n");
+            printf("ï¿½ï¿½È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. \n\n");
             break;
         }
     }
